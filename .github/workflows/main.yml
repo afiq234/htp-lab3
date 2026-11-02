@@ -36,4 +36,7 @@ jobs:
           echo "My secret is ${{ secrets.SECRETAPI}}."
           echo "My variable is ${{ vars.VARIABLETEST}}."
 
+        env:
+          SECRETAPI: ${{ secrets.SECRETAPI}}
+          VARIABLETEST: ${{ vars.VARIABLETEST}}
         shell: bash
