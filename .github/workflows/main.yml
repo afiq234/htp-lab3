@@ -33,4 +33,7 @@ jobs:
         run: |
           echo "Hello ${{github.actor}}"
           echo "Current branch ${{github.ref}}"
+          echo "My secret is ${{ secrets.API_KEY}}."
+          echo "My secret is ${{ vars.TestEnvVar}}."
+
         shell: bash
