@@ -1,4 +1,4 @@
-name:  My First Workflow
+name: My First Workflow
 on: 
   push:
     branches:
@@ -8,6 +8,6 @@ jobs:
     name: My First Job
     runs-on: ubuntu-latest
     steps:
-      -  name: Greet the user
-         run:  echo "Hello $((github.user))"
-         shell: bash
+     - name: Greet the user
+       run: echo "Hello ${{github.actor}}"
+       shell: bash
